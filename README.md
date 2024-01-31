@@ -107,14 +107,12 @@ pip install -r requirements.txt
 ```
 
 该代码已经在：
-
+```bash
 Ubuntu 22.04
-
 Python 3.9.12
-
 CUDA 12.2
-
 NVIDIA A100 GPU
+```
 
 上进行了测试。
 
