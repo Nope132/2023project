@@ -59,7 +59,7 @@ blender
 
 <figure align="center">
   <img src="./examples/large_scale_fluid.gif" alt="由1.23M颗粒组成的流体的大规模流体模拟。" width="96%">
-  <figcaption>Large scale fluid simulation of fluid consisting of 1.23M particles.</figcaption>
+  <figcaption>由1.23M颗粒组成的流体的大规模流体模拟。</figcaption>
 </figure>
 
 
@@ -68,7 +68,7 @@ blender
 
 <figure align="center">
   <img src="./examples/coupling.gif" alt="模拟密闭空间中的一个流体对象和九个刚性对象。="96%">
-  <figcaption>Simulation of one fluid object and nine rigid objects in a confined space.</figcaption>
+  <figcaption>模拟密闭空间中的一个流体对象和九个刚性对象。</figcaption>
 </figure>
 
 
@@ -76,7 +76,7 @@ blender
 
 <figure align="center">
   <img src="./examples/high_viscosity_fluid.gif" alt="模拟具有极高粘度的流体。" width="96%">
-  <figcaption>Simulation of fluid with extremely high viscosity.</figcaption>
+  <figcaption>模拟具有极高粘度的流体。</figcaption>
 </figure>
 
 
@@ -84,7 +84,7 @@ blender
 
 <figure align="center">
   <img src="./examples/buckling_effect.gif" alt="屈服效应模拟" width="96%">
-  <figcaption>Simulation of buckling effect.</figcaption>
+  <figcaption>屈服效应模拟</figcaption>
 </figure>
 
 
@@ -93,7 +93,7 @@ blender
 
 <figure align="center">
   <img src="./examples/coiling_effect.gif" alt="蜷曲效果模拟" width="96%">
-  <figcaption>Simulation of coiling effect.</figcaption>
+  <figcaption>蜷曲效果模拟</figcaption>
 </figure>
 
 ## Linux的安装
@@ -189,42 +189,33 @@ export PATH=$PATH:~/blender-3.6.7-linux-x64/
 渲染脚本用搅拌器3.6.7测试，搅拌器4.0似乎不兼容。
 
 
-## Usage
+## 使用方法
 
-For a quick start, try the following command and make sure you turn on the export settings in the `json` scene configuration.
-
+为了快速入门，请尝试以下命令，并确保在`json`场景配置
 ```bash
 python run_simulation.py --scene ./data/scenes/dragon_bath_dfsph.json
 ```
 
-To visualize the results, you can run the following command to make the images into a video. Those raw images is derived from Taichi GGUI API.
+要可视化结果，可以运行以下命令将图像制作成视频。这些原始图像来自 Taichi GGUI API.
 
 ```bash
 python make_video.py --input_dir ./dragon_bath_dfsph_output \
 --image_name raw_view.png --output_path --video.mp4 --fps 30
 ```
 
-To make the `.ply` particle file into `.obj` file for rendering, you can do surface reconstruction with the following command:
-
+要使`.ply`粒子文件到`.OBJ`文件进行渲染，可以使用以下命令进行曲面重建：
 ```bash
 python surface_reconstruction.py --input_dir ./dragon_bath_dfsph_output --num_workers 2
 ```
 
-This will open `num_workers` processes to do surface reconstruction with [splashsurf](https://github.com/InteractiveComputerGraphics/splashsurf).
+这将打开 `num_workers` 用[splashsurf](https://github.com/InteractiveComputerGraphics/splashsurf).进行曲面重建的过程
 
-Then you can do rendering with [blender](https://www.blender.org/). We suggest you to first make a scene with a graphical user interface, setting materials, lighting, camera, rendering parameters and add other static objects. Then you can save the scene as a `.blend` file. With this, you can render the whole simulation process by running
-
+然后可以使用[blender](https://www.blender.org/)。我们建议您首先使用图形用户界面创建场景，设置材质、照明、摄影机、渲染参数并添加其他静态对象。然后可以将场景另存为·.blend·文件。通过此操作，可以通过运行以下命令渲染整个模拟过程
 ```bash
 CUDA_VISIBLE_DEVICES=0 python render.py --scene_file ./scene.blend \
 --input_dir ./dragon_bath_dfsph_output --num_workers=1 --device_type OPTIX
 ```
-
-The rendering script can put rendering jobs on multiple gpus.  You can set `CUDA_VISIBLE_DEVICES` and `num_workers` according to your available devices.
-
-
-
-
-
+渲染脚本可以将渲染作业放在多个gpu上。可以根据可用的设备可以设置`CUDA_VISIBLE_DEVICES`和 `num_workers` 
 
 
 
