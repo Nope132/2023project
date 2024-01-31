@@ -1,5 +1,5 @@
 # homework:SPH 流体模拟
-这是在笔者大二阶段曾与另外一同学制作基础上进行的进一步开发，借鉴了Tsinghua University的视频并进一步复现
+这是在笔者大二阶段曾与另外一同学制作基础上进行的进一步开发，借鉴了清华大学一位同学的视频并进一步复现，详见致谢
 
 <figure align="center">
   <img src="./pipeline.png" alt="pipeline of our framework" width="96%">
@@ -58,7 +58,7 @@ blender
 ### 大规模的流体模拟
 
 <figure align="center">
-  <img src="./examples/large_scale_fluid.gif" alt="由1.23M颗粒组成的流体的大规模流体模拟。" width="96%">
+  <img src="./examples/large_scale_fluid.gif" alt="Large scale fluid simulation with over a million particles" width="96%">
   <figcaption>由1.23M颗粒组成的流体的大规模流体模拟。</figcaption>
 </figure>
 
@@ -67,7 +67,7 @@ blender
 ## 刚体流体耦合体
 
 <figure align="center">
-  <img src="./examples/coupling.gif" alt="模拟密闭空间中的一个流体对象和九个刚性对象。="96%">
+  <img src="./examples/coupling.gif" alt="Rigid-fluid coupling="96%">
   <figcaption>模拟密闭空间中的一个流体对象和九个刚性对象。</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ blender
 ## 高粘性流体
 
 <figure align="center">
-  <img src="./examples/high_viscosity_fluid.gif" alt="模拟具有极高粘度的流体。" width="96%">
+  <img src="./examples/high_viscosity_fluid.gif" alt="Fluid with extremely high viscosity" width="96%">
   <figcaption>模拟具有极高粘度的流体。</figcaption>
 </figure>
 
@@ -83,7 +83,7 @@ blender
 ## 屈服效应
 
 <figure align="center">
-  <img src="./examples/buckling_effect.gif" alt="屈服效应模拟" width="96%">
+  <img src="./examples/buckling_effect.gif" alt="Realistic simulation of buckling effect" width="96%">
   <figcaption>屈服效应模拟</figcaption>
 </figure>
 
@@ -92,7 +92,7 @@ blender
 ## 蜷曲效果
 
 <figure align="center">
-  <img src="./examples/coiling_effect.gif" alt="蜷曲效果模拟" width="96%">
+  <img src="./examples/coiling_effect.gif" alt="Realistic simulation of coiling effect" width="96%">
   <figcaption>蜷曲效果模拟</figcaption>
 </figure>
 
