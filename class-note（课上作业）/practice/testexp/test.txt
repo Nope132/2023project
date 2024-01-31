@@ -1,0 +1,13 @@
+#!/usr/bin/python
+#coding utf-8
+def foo(bar,buz):
+    if bar>20:
+        if buz<30:
+            bar+=10
+        else:
+            bar-=10
+    else:
+        buz*=2
+    return bar,buz
+if __name__=="__main__":
+    main()
