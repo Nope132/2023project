@@ -67,7 +67,7 @@ blender
 ## 刚体流体耦合体
 
 <figure align="center">
-  <img src="./examples/coupling.gif" alt="Rigid-fluid coupling="96%">
+  <img src="./examples/coupling.gif" alt="Rigid-fluid coupling"width=96%">
   <figcaption>模拟密闭空间中的一个流体对象和九个刚性对象。</figcaption>
 </figure>
 
