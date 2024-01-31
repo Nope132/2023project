@@ -1,5 +1,5 @@
 # homework:SPH 流体模拟
-这是在笔者大二阶段曾与另外一同学制作基础上进行的进一步开发，借鉴了清华大学一位同学的视频并进一步复现，详见致谢
+这是在笔者大二阶段曾与另外一同学制作基础上进行的进一步开发，借鉴了清华大学姚班的计算机图像学课程并进一步复现，详见致谢
 
 <figure align="center">
   <img src="./pipeline.png" alt="pipeline of our framework" width="96%">
@@ -63,7 +63,6 @@ blender
 </figure>
 
 
-
 ## 刚体流体耦合体
 
 <figure align="center">
@@ -86,7 +85,6 @@ blender
   <img src="./examples/buckling_effect.gif" alt="Realistic simulation of buckling effect" width="96%">
   <figcaption>屈服效应模拟</figcaption>
 </figure>
-
 
 
 ## 蜷曲效果
