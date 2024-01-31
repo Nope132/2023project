@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td>name</td><td>age</td>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in results %}
+          <tr>
+            <td>{{ row[0] }}</td>
+            {% if row[1] >= 15 %}
+            <td><font color="red">{{ row[1] }}</font></td>
+            {% else %}
+            <td>{{ row[1] }}</td>
+            {% endif %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table> 
+  </body>
+</html>

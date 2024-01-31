@@ -1,0 +1,48 @@
+Git 创建仓库
+
+
+git init：初始化一个git仓库
+git clone：clone一个git仓库
+
+
+Git 基本指令的使用
+
+git中常用命令：
+
+git config：配置信息
+git add：添加文件到缓存命令
+git status：查看文件的状态命令
+git diff：查看更新的详细信息命令
+git commit：提交命令
+git reset HEAD：取消缓存命令
+git rm：删除命令
+git mv：移动或重命名命令
+
+暂存文件的命令：git add <文件名>
+放弃未暂存文件的修改命令：git checkout – <文件名>
+将被修改的文件暂存并提交的命令：git commit -a
+
+Git的分支管理
+
+git branch：查看分支命令
+git branch (branchname)：创建分支命令
+git checkout (branchname)：切换分支命令
+git merge：合并分支命令
+git branch -d (branchname)：删除分支命令
+
+Git查看提交历史
+ 
+–oneline ：查看历史记录的简洁版本
+–graph ：查看历史中什么时候出现了分支、合并
+–reverse ：逆向显示所有日志
+–author ：查找指定用户的提交日志
+–since、–before、 --until、–after： 指定帅选日期
+–no-merges ：选项以隐藏合并提交
+
+Git 远程仓库
+
+git remote add：添加远程仓库
+git remote：查看当前的远程仓库
+git fetch、git pull：提取远程仓仓库
+git push：推送到远程仓库
+git remote rm：删除远程仓库
